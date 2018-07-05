@@ -1,0 +1,18 @@
+syntax = "proto3";
+package msg;
+
+message Location {
+	int32 fromX  =1;
+	int32 fromY  =2;
+	int32 toX  =3;
+	int32 toY  =4;
+	string direction =5;
+	double speed =6;
+	string player =7;
+}
+
+message Skill {
+	string skillId =1;
+	string direction =2;
+	string player =3;
+}
